@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from main.models import TestModel
+from backend.models import TestModel
 
 
 class TestModelSerializer(serializers.ModelSerializer):

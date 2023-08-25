@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ModelViewSet
 
-from main.serializers import TestModelSerializer
-from main.models import TestModel
+from backend.serializers import TestModelSerializer
+from backend.models import TestModel
 
 
 class TestModelView(ModelViewSet):
