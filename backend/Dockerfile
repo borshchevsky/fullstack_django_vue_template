@@ -14,7 +14,7 @@ RUN chmod +x wait-for-it.sh
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # ???????
-COPY backend .
+COPY . .
 
 EXPOSE 8000
 

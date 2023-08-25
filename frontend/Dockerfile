@@ -1,15 +1,14 @@
 FROM node:lts-alpine
 
-RUN npm install -g http-server
+# for prod
+# RUN npm install -g http-server
 
 WORKDIR /app
-
-COPY package*.json ./
-
+COPY package.json .
 RUN npm install
-
 COPY . .
 
+# for prod
 #RUN npm run build
 
 EXPOSE 8080
