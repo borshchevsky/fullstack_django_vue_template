@@ -15,6 +15,4 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 COPY . .
 
-EXPOSE 8000
-
 ENTRYPOINT ["./run.sh"]
