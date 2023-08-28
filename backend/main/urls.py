@@ -21,6 +21,6 @@ from django.urls import path, include
 from backend.urls import router
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
     path('admin/', admin.site.urls),
 ] + staticfiles_urlpatterns()

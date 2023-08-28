@@ -8,6 +8,7 @@ services:
       - "8000:8000"
     volumes:
       - ./backend:/opt/app
+      - staticfiles:/opt/app/staticfiles
 
   postgres:
     image: postgres
@@ -30,6 +31,16 @@ services:
       - ./frontend:/app
       - /app/node_modules
 
+  nginx:
+    build: nginx
+    container_name: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - staticfiles:/staticfiles
+    ports:
+      - "80:80"
+
 volumes:
   pgdata:
+  staticfiles:
 
