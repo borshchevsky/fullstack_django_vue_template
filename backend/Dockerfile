@@ -13,7 +13,6 @@ RUN chmod +x run.sh
 RUN chmod +x wait-for-it.sh
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# ???????
 COPY . .
 
 EXPOSE 8000

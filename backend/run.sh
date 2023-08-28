@@ -4,5 +4,5 @@
 python manage.py makemigrations
 python manage.py migrate
 python manage.py add_test_query
-python manage.py collectstatic
+python manage.py collectstatic --no-input
 gunicorn --bind 0.0.0.0:8000 main.wsgi --reload

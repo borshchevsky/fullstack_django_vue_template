@@ -28,6 +28,7 @@ services:
       - "8080:8080"
     volumes:
       - ./frontend:/app
+      - /app/node_modules
 
 volumes:
   pgdata:
